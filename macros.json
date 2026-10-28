@@ -1,0 +1,94 @@
+{
+  "keys": [
+    {
+      "type": "text",
+      "value": "a",
+      "enter": false
+    },
+    {
+      "type": "text",
+      "value": "b",
+      "enter": true
+    },
+    {
+      "type": "text",
+      "value": "c",
+      "enter": false
+    },
+    {
+      "type": "text",
+      "value": "4",
+      "enter": false
+    },
+    {
+      "type": "text",
+      "value": "e",
+      "enter": false
+    },
+    {
+      "type": "text",
+      "value": "f",
+      "enter": false
+    }
+  ],
+  "encoders": [
+    [
+      {
+        "type": "shortcut",
+        "key": "LEFT",
+        "mods": []
+      },
+      {
+        "type": "shortcut",
+        "key": "RIGHT",
+        "mods": []
+      },
+      {
+        "type": "text",
+        "value": "text",
+        "enter": true
+      }
+    ],
+    [
+      {
+        "type": "shortcut",
+        "key": "VOLD",
+        "mods": []
+      },
+      {
+        "type": "shortcut",
+        "key": "VOLU",
+        "mods": []
+      },
+      {
+        "type": "shortcut",
+        "key": "MUTE",
+        "mods": []
+      }
+    ]
+  ],
+  "hardware": {
+    "row_pins": [
+      "D7",
+      "D10"
+    ],
+    "col_pins": [
+      "D9",
+      "D8",
+      "D6"
+    ],
+    "encoder_pins": [
+      [
+        "D0",
+        "D1",
+        "D2"
+      ],
+      [
+        "D3",
+        "D4",
+        "D5"
+      ]
+    ],
+    "diode_orientation": "ROW2COL"
+  }
+}
