@@ -12,7 +12,7 @@ It currently supports 6 keys in a 2×3 matrix and 2 rotary encoders. You can ass
 
 ## Getting Started
 
-1. Back up your macropad’s existing `code.py`.
+1. Download and extract code.ZIP from releases, or just direct download `app.py`, `code.py`, and `macros.json`
 2. Keep `app.py` and `macros.json` together in a folder on your computer.
 3. Run the app from that folder:
 
