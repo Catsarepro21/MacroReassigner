@@ -1,12 +1,15 @@
 import tkinter as tk
 import json
+import sys
 from pathlib import Path
 from tkinter import simpledialog, messagebox, filedialog
 
 
-config_path = Path(__file__).with_name("macros.json")
+default_config_path = Path(__file__).with_name("macros.json")
+app_path = Path(sys.executable) if getattr(sys, "frozen", False) else Path(__file__)
+config_path = app_path.with_name("macros.json")
 
-with config_path.open("r", encoding="utf-8-sig") as file:
+with (config_path if config_path.exists() else default_config_path).open("r", encoding="utf-8-sig") as file:
     config = json.load(file)
 
 config.setdefault("encoders", [

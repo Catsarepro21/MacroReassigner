@@ -6,25 +6,17 @@ It currently supports 6 keys in a 2×3 matrix and 2 rotary encoders. You can ass
 
 ## Requirements
 
-- Python 3 with Tkinter on your computer
+- Windows for the downloadable app, or Python 3 with Tkinter to run from source
 - An RP2040-based macropad running CircuitPython and KMK
-- The `app.py`, `code.py`, and `macros.json` files in this repo
 
 ## Getting Started
 
-1. Download and extract code.ZIP from releases, or just direct download `app.py`, `code.py`, and `macros.json`
-2. Keep `app.py` and `macros.json` together in a folder on your computer.
-3. Run the app from that folder:
-
-   ```bash
-   python app.py
-   ```
-
-4. Click Wiring Settings and enter the pins for your macropad. Use the exact pin names supported by your board.
-5. Set your macros by clicking a key or an encoder’s Left, Right, or Press button.
-6. Click Apply to RP and select the root of your CIRCUITPY drive to save the configuration.
-7. Copy this repo’s `code.py` onto the CIRCUITPY drive, replacing the existing firmware file. KMK must already be installed.
-8. Wait a few seconds for the firmware to reload, then test your assignments!
+1. Download `MacroReassigner.exe` from [Releases](https://github.com/Catsarepro21/MacroReassigner/releases), put it in a folder you can write to, and double-click it. To run from source, keep `app.py` and `macros.json` together and run `python app.py`.
+2. Click Wiring Settings and enter the pins for your macropad. Use the exact pin names supported by your board.
+3. Set your macros by clicking a key or an encoder’s Left, Right, or Press button.
+4. Click Apply to RP and select the root of your CIRCUITPY drive to save the configuration.
+5. Copy the firmware `code.py` from the release's code ZIP onto the CIRCUITPY drive. KMK must already be installed.
+6. Wait a few seconds for the firmware to reload, then test your assignments!
 
 After setup, you only need to click Apply to RP when changing assignments or wiring.
 
